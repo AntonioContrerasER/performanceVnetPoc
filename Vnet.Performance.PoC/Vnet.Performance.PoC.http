@@ -1,0 +1,6 @@
+@Vnet.Performance.PoC_HostAddress = http://localhost:5124
+
+GET {{Vnet.Performance.PoC_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
