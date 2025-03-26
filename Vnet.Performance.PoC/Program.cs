@@ -31,8 +31,8 @@ app.MapGet("/compare", async (IHttpClientFactory httpClientFactory) =>
 {
     var httpClient = httpClientFactory.CreateClient();
 
-    var publicUrl = "https://public-api.azurewebsites.net/heavy-process";
-    var privateUrl = "http://10.0.0.5/heavy-process"; // IP privada o DNS interno
+    var publicUrl = "https://heavyproces-pocfree-e0fkbxf2erbxchcn.mexicocentral-01.azurewebsites.net/heavy-process";
+    var privateUrl = "http://heavyproces-pocpago-bva0bzghg8fte7au.mexicocentral-01.privatelink.azurewebsites.net/heavy-process/heavy-process"; // IP privada o DNS interno
 
     async Task<object> PingUrl(string url)
     {
